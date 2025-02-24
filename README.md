@@ -36,6 +36,9 @@ Our first workspace will be our shared system catalog. A sample is available in 
 This workspace defines only your global systems and persons. Don't add any relationship here or any view.
 
 Upload the dsl to Structurizr in the workspace 1.
+
+![SystemCatalog](images/systemcatalog.png)
+
 Now, to be extendable by the teams, you will need to share it. To do it, visit once again http://localhost:8080 and login, 
 open the system catalog workspace, click on **Sharing link** and then click on **DSL - View**. You should see
 your DSL. Note the url (something like http://localhost:8080/share/1/4d9e4fa2-3b78-4383-8c8e-7ed433b2db6f/dsl). This url
@@ -55,7 +58,9 @@ The scope key will be used by our Java tool to filter the workspaces and generat
 
 Before uploading the DSLs to Structurizr, remember to change the **System Catalog** share link in each workspace.dsl file.
 Upload your DSLs to Structurizr in workspaces 2, 3 and 4. You should see now that each workspace have imported the models 
-defined in the **System Catalog**.
+defined in the **System Catalog**. An example for the Order system:
+
+![OrderSystem](images/ordersystem.png)
 
 ### Generate system landscape
 
@@ -72,7 +77,9 @@ Run the tool giving the path to your **System Catalog** DSL file (in our case, "
 The tool will connect to Structurizr, get all the workspaces with the scope "softwaresystem", and merge 
 the relationships with your **System Catalog**. The result will then be uploaded to the workspace 5.
 
-Run the tool, visit http://localhost:8080, and you should see a new "Landscape" workspace.
+Run the tool, visit http://localhost:8080, and you should see a new "Landscape" workspace:
+
+![Landscape](images/systemlandscape.png)
 
 ## Sources
 
